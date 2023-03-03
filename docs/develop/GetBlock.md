@@ -38,7 +38,7 @@ Following the tutorial, you will:
 
 2. Create an endpoint for polygon Tesnet (Mumbai)
 
-<a href="https://ibb.co/CMbpR1c"><img src="https://i.ibb.co/P9csqmL/unnamed-1.png" alt="unnamed-1" border="0"></a>
+![img](https://i.ibb.co/P9csqmL/unnamed-1.png)
 
 Then enter Metamask and choose to connect a network manually, connect your Metamask to the Polygon Testnet Network adding your GetBlock endpoint to the “RPC URL” line
 
