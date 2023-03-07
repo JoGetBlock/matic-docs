@@ -1,4 +1,5 @@
-id: GetBlock
+---
+id: getblock
 title: Deploy a Smart Contract on Polygon using GetBlock
 sidebar_label: Using GetBlock
 description: Guide to deploy smart contracts using GetBlock
@@ -10,6 +11,7 @@ keywords:
   - create smart contract
   - deploy on polygon
 image: https://wiki.polygon.technology/img/polygon-wiki.png
+---
 
 ## Overview 
 
@@ -85,8 +87,3 @@ All done! Congratulations on deploying your smart contract.
 This is how you deploy an easy Smart Contract on Polygon using Remix and GetBlock.
 
 If you have any additional questions or would like to share your experience, feel free to join our [community of Web3 developers](https://discord.gg/Jb9UZZUHN7) who are always ready to chat. 
-
-
-
-
-
