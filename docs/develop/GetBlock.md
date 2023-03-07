@@ -10,18 +10,12 @@ keywords:
   - getblock
   - create smart contract
   - deploy on polygon
-image: https://wiki.polygon.technology/img/polygon-wiki.png
+image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 
-## Overview 
+Polygon node connection is an advantage for any dApp whether it's an on-chain game or trading bots. Polygon API endpoint by GetBlock is an instrument of choice for many early-stage teams. This is an easy step-by-step tutorial on how to create and deploy an ERC-20 smart contract on the Polygon Mumbai testnet using [Metamask](https://metamask.io/), Remix, and [GetBlock](https://getblock.io/nodes/matic/).
 
-Polygon node connection is an advantage for any dApp: from on-chain games to trading bots. Polygon (MATIC) API endpoint by GetBlock is an instrument of choice for many early-stage teams.This is an easy step-by-step tutorial on how to create and deploy an ERC-20 smart contract on the Polygon test network using a virtual wallet [(Metamask)](https://metamask.io/), Risk, and [GetBlock](https://getblock.io/nodes/matic/).
-
-## What you will learn
-
-To create a smart contract in this tutorial, you will learn how to use GetBlock to:
-
-Create a smart contract on Polygon (Mumbai) using [GetBlock](https://getblock.io/) endpoints. 
+You will learn how to use GetBlock to create and deploy a smart contract on Mumbai Testnet using [GetBlock](https://getblock.io/) endpoints. 
 
 ## What you will do
 
@@ -34,53 +28,38 @@ Following the tutorial, you will:
 
 ### Preparatory Steps
 
-1. So the first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email
+1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email
 
-![img](https://i.ibb.co/TKmT3nP/unnamed.png)
+  ![img](https://i.ibb.co/TKmT3nP/unnamed.png)
 
-2. Create an endpoint for polygon Tesnet (Mumbai)
+2. Create an endpoint for Mumbai Testnet
 
-![img](https://i.ibb.co/P9csqmL/unnamed-1.png)
+  ![img](https://i.ibb.co/P9csqmL/unnamed-1.png)
 
-Then enter Metamask and choose to connect a network manually, connect your Metamask to the Polygon Testnet Network adding your GetBlock endpoint to the “RPC URL” line
+  Then enter Metamask and choose to connect a network manually, connect your Metamask to the Mumbai Testnet adding your GetBlock endpoint in the **RPC URL** line
 
-![img](https://i.ibb.co/b7kmNPW/unnamed-1.png)
-![img](https://i.ibb.co/26W1Djb/unnamed-2.png)
+  ![img](https://i.ibb.co/b7kmNPW/unnamed-1.png)
+  ![img](https://i.ibb.co/26W1Djb/unnamed-2.png)
 
-If you have a no balance in your account, you can request tokens on mumbai faucet here: https://mumbaifaucet.com/
+If you have zero balance in your account, you can request tokens from the [Mumbai faucet](/develop/tools/matic-faucet.md).
 
 ## Smart Contract Development
 
-Go to [Remix](https://remix.ethereum.org/) (Remix is a web-base Integrated Development Environment (IDE) for Ethereum smart contract development in Solidity).
-Let's take “Storage.sol” from Remix as an example of a contract
+Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-based IDE for Ethereum smart contract development in Solidity. 
 
-![img](https://i.ibb.co/7JxRcS5/unnamed-2.png)
+1. Let's take `Storage.sol` from Remix as our example of a smart contract.
 
-Proceed by deploying 
+  ![img](https://i.ibb.co/7JxRcS5/unnamed-2.png)
 
-![img](https://i.ibb.co/FHQvbb0/unnamed-3.png)
+2. Deploy the smart contract.
 
-Choose the Injected provider “Metamask”
+  ![img](https://i.ibb.co/FHQvbb0/unnamed-3.png)
 
-Check that our smart contract has been created on the Network 
+3. Choose the Injected provider as **Metamask**. Check that our smart contract has been created on the network.
 
-![img](https://i.ibb.co/tXTZdcn/unnamed-5.png)
+  ![img](https://i.ibb.co/tXTZdcn/unnamed-5.png)
 
 Smart contract URL: https://mumbai.polygonscan.com/address/0xa4d552dce0e26564ec1737638705584ce9ed351b
-
-### Testing the Smart Contract 
-
-There were 12 in the storage. To check, change the value to 14.
-
-![img](https://i.ibb.co/gtW34mp/unnamed-6.png)
-
-In the “Store” field, enter the number 14 and save it on the network after confirming the operation in Metamask.
-
-Waiting for the transaction to be added to the network block.
-
-Then we make sure that the saved value has changed from 12 to 14
-
-![img](https://i.ibb.co/XxcNqNN/unnamed-8.png)
 
 All done! Congratulations on deploying your smart contract.
 
