@@ -381,6 +381,7 @@ module.exports = {
             "develop/truffle",
             "develop/hardhat",
             "develop/replit",
+            "develop/getblock",
           ],
         },
         "develop/network-details/genesis-contracts",
