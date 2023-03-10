@@ -30,16 +30,16 @@ Following the tutorial, you will:
 
 1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email
 
-  ![img](https://i.ibb.co/TKmT3nP/unnamed.png)
+  ![img](https://drive.google.com/file/d/1EIzFlsS4g6ApQWs2UOKMCmZW9dpeALzd/view?usp=sharing)
 
 2. Create an endpoint for Mumbai Testnet
 
-  ![img](https://i.ibb.co/P9csqmL/unnamed-1.png)
+  ![img](https://drive.google.com/file/d/1Vom8yzm8b6RCR-siw3sFmw4ZK1fr0rFc/view?usp=sharing)
 
   Then enter Metamask and choose to connect a network manually, connect your Metamask to the Mumbai Testnet adding your GetBlock endpoint in the **RPC URL** line
 
-  ![img](https://i.ibb.co/b7kmNPW/unnamed-1.png)
-  ![img](https://i.ibb.co/26W1Djb/unnamed-2.png)
+  ![img](https://drive.google.com/file/d/1TR2alsW5V622bqJC7DpXSQQ-jeGdHIGB/view?usp=share_link)
+  ![img](https://drive.google.com/file/d/19YPm9WWWwvYmUhNYvNqfHkqqhp1UeZSf/view?usp=sharing)
 
 If you have zero balance in your account, you can request tokens from the [Mumbai faucet](/develop/tools/matic-faucet.md).
 
@@ -49,15 +49,15 @@ Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-
 
 1. Let's take `Storage.sol` from Remix as our example of a smart contract.
 
-  ![img](https://i.ibb.co/7JxRcS5/unnamed-2.png)
+  ![img](https://drive.google.com/file/d/12PEfBR7Tju9ReVYVtipSn3iR_rndMxEs/view?usp=sharing)
 
 2. Deploy the smart contract.
 
-  ![img](https://i.ibb.co/FHQvbb0/unnamed-3.png)
+  ![img](https://drive.google.com/file/d/1EJ6ifAuOQTtGBAtDGjf7UlhY_HuVfArz/view?usp=sharing)
 
 3. Choose the Injected provider as **Metamask**. Check that our smart contract has been created on the network.
 
-  ![img](https://i.ibb.co/tXTZdcn/unnamed-5.png)
+  ![img](https://drive.google.com/file/d/1SAnWXX_SarEOMcFgLGKyOyKHGgI9mGeY/view?usp=sharing)
 
 Smart contract URL: https://mumbai.polygonscan.com/address/0xa4d552dce0e26564ec1737638705584ce9ed351b
 
