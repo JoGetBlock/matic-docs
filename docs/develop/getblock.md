@@ -10,6 +10,7 @@ keywords:
   - getblock
   - create smart contract
   - deploy on polygon
+  - verify your smart contract
 image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 
@@ -30,16 +31,16 @@ Following the tutorial, you will:
 
 1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email
 
-  ![img](https://drive.google.com/file/d/1EIzFlsS4g6ApQWs2UOKMCmZW9dpeALzd/view?usp=sharing)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide1.png)
 
 2. Create an endpoint for Mumbai Testnet
 
-  ![img](https://drive.google.com/file/d/1Vom8yzm8b6RCR-siw3sFmw4ZK1fr0rFc/view?usp=sharing)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide2.png)
 
   Then enter Metamask and choose to connect a network manually, connect your Metamask to the Mumbai Testnet adding your GetBlock endpoint in the **RPC URL** line
 
-  ![img](https://drive.google.com/file/d/1TR2alsW5V622bqJC7DpXSQQ-jeGdHIGB/view?usp=share_link)
-  ![img](https://drive.google.com/file/d/19YPm9WWWwvYmUhNYvNqfHkqqhp1UeZSf/view?usp=sharing)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide3.png)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide4.png)
 
 If you have zero balance in your account, you can request tokens from the [Mumbai faucet](/develop/tools/matic-faucet.md).
 
@@ -49,19 +50,43 @@ Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-
 
 1. Let's take `Storage.sol` from Remix as our example of a smart contract.
 
-  ![img](https://drive.google.com/file/d/12PEfBR7Tju9ReVYVtipSn3iR_rndMxEs/view?usp=sharing)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide5.png)
 
 2. Deploy the smart contract.
 
-  ![img](https://drive.google.com/file/d/1EJ6ifAuOQTtGBAtDGjf7UlhY_HuVfArz/view?usp=sharing)
+  ![img](https://storage.getblock.io/web/blog/article-images/guide6.png)
 
-3. Choose the Injected provider as **Metamask**. Check that our smart contract has been created on the network.
+3. Choose the Injected provider as **Metamask**. 
 
-  ![img](https://drive.google.com/file/d/1SAnWXX_SarEOMcFgLGKyOyKHGgI9mGeY/view?usp=sharing)
+ ![img](https://storage.getblock.io/web/blog/article-images/guide7.png)
+  
+  Check that our smart contract has been created on the network.
+  
+ ![img](https://storage.getblock.io/web/blog/article-images/guide8.png)
 
 Smart contract URL: https://mumbai.polygonscan.com/address/0xa4d552dce0e26564ec1737638705584ce9ed351b
 
 All done! Congratulations on deploying your smart contract.
+
+## Testing and Verification
+
+Once you have deployed your smart contract on the Polygon test network using GetBlock, it is important to test and verify its functionality to ensure that it works as intended. Here are some steps you can take for testing and verification:
+
+There were 12 in the storage. To check, change the value to 14.
+
+ ![img](https://storage.getblock.io/web/blog/article-images/guide9.png)
+
+In the “Store” field, enter the number 14 and save it on the network after confirming the operation in Metamask
+
+ ![img](https://storage.getblock.io/web/blog/article-images/guide10.png)
+
+Waiting for the transaction to be added to the network block.
+
+Then we make sure that the saved value has changed from 12 to 14.
+
+ ![img](https://storage.getblock.io/web/blog/article-images/guide11.png)
+
+By following these steps, you can ensure that your smart contract works as intended and is secure and reliable for your users.
 
 This is how you deploy an easy Smart Contract on Polygon using Remix and GetBlock.
 
