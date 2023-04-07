@@ -14,80 +14,99 @@ keywords:
 image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 
-Polygon node connection is an advantage for any dApp whether it's an on-chain game or trading bots. Polygon API endpoint by GetBlock is an instrument of choice for many early-stage teams. This is an easy step-by-step tutorial on how to create and deploy an ERC-20 smart contract on the Polygon Mumbai testnet using [Metamask](https://metamask.io/), Remix, and [GetBlock](https://getblock.io/nodes/matic/).
+The Polygon API endpoint by GetBlock is a useful tool for early-stage teams that want to take advantage of Polygon's benefits. In this tutorial, we will walk you through the steps to create and deploy an ERC-20 smart contract on the Polygon Mumbai testnet using [Metamask](https://metamask.io/), Remix, and [GetBlock](https://getblock.io/nodes/matic/).
 
-You will learn how to use GetBlock to create and deploy a smart contract on Mumbai Testnet using [GetBlock](https://getblock.io/) endpoints. 
+You will learn how to use GetBlock to create and deploy a smart contract on the Mumbai Testnet using [GetBlock](https://getblock.io/) endpoints.  
 
-## What you will do
+## W## What you will do
 
 Following the tutorial, you will:
+
 1. Get started on GetBlock and access GetBlock test nodes
 2. Create a wallet address with Metamask
 3. Add balance to the wallet (using test tokens)
-4. Use Remix to compile and deploy a Smart Contract
-5. Check contract status
+4. Compile and deploy a smart contract using Remix
+5. Check the status of your smart contract.
 
 ### Preparatory Steps
 
-1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email
+1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email via 
 
-  ![img](https://storage.getblock.io/web/blog/article-images/guide1.png)
+  ![img](https://storage.getblock.io/web/blog/article-images/img1+(2).png)
 
-2. Create an endpoint for Mumbai Testnet
+2. Create an endpoint for Polygon testnet (Mumbai).
 
-  ![img](https://storage.getblock.io/web/blog/article-images/guide2.png)
+  ![img](https://storage.getblock.io/web/blog/article-images/img2+(1).png)
 
-  Then enter Metamask and choose to connect a network manually, connect your Metamask to the Mumbai Testnet adding your GetBlock endpoint in the **RPC URL** line
+3. Then enter Metamask and choose to connect a network manually, connect your Metamask to the Mumbai Testnet adding your GetBlock endpoint in the **RPC URL** line
 
-  ![img](https://storage.getblock.io/web/blog/article-images/guide3.png)
-  ![img](https://storage.getblock.io/web/blog/article-images/guide4.png)
+  ![img](https://storage.getblock.io/web/blog/article-images/imga3.png)
 
 If you have zero balance in your account, you can request tokens from the [Mumbai faucet](/develop/tools/matic-faucet.md).
 
 ## Smart Contract Development
 
-Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-based IDE for Ethereum smart contract development in Solidity. 
+- Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-based IDE for Ethereum smart contract development in Solidity. 
 
-1. Let's take `Storage.sol` from Remix as our example of a smart contract.
+- Click on the "Create a new file" button located on the left side of the page.
 
-  ![img](https://storage.getblock.io/web/blog/article-images/guide5.png)
+- Select “Storage.sol” from Remix as an example of a contract.
 
-2. Deploy the smart contract.
+  ![img](https://storage.getblock.io/web/blog/article-images/imga4.png)
 
-  ![img](https://storage.getblock.io/web/blog/article-images/guide6.png)
+- Proceed by deploying the smart contract by clicking on the “Deploy & Run Transactions” tab.
 
-3. Choose the Injected provider as **Metamask**. 
+- In Remix, click on the “Deploy & Run Transactions” tab located on the left-hand side of the screen. 
 
- ![img](https://storage.getblock.io/web/blog/article-images/guide7.png)
+- In the “Contract” dropdown menu, select the name of the smart contract you want to deploy and click on the “Deploy” button to deploy the smart contract.
+A Metamask window will pop up asking you to confirm the transaction. Click on the “Confirm” button to proceed.Wait for the transaction to be confirmed on the Polygon network. 
+
+- You can track the status of the transaction in the Metamask window or by checking the transaction hash on the Polygon explorer.
+
+- Once the transaction has been confirmed, you should see a green checkmark and a message indicating that the contract has been deployed successfully.
+
+  ![img](https://storage.getblock.io/web/blog/article-images/imga5.png)
+
+Locate the storage variable you want to test.
+
+- Choose "Injected provider" as the provider and select "Metamask" as the wallet. 
+
+ ![img](https://storage.getblock.io/web/blog/article-images/imga6.png)
   
-  Check that our smart contract has been created on the network.
+- Check that your smart contract has been created on the network by looking at the Remix output panel.
+
+- Click on the "Polygon (Matic) Mainnet" dropdown menu located at the top right corner of the page and select "Mumbai Testnet" from the list of available networks. Then enter the address of your smart contract in the search bar located at the top of the page.
+
+- Click on the search button or hit enter.
   
- ![img](https://storage.getblock.io/web/blog/article-images/guide8.png)
+ ![img](https://storage.getblock.io/web/blog/article-images/img6+(1).png)
 
 Smart contract URL: https://mumbai.polygonscan.com/address/0xa4d552dce0e26564ec1737638705584ce9ed351b
 
-All done! Congratulations on deploying your smart contract.
+If your smart contract has been successfully deployed, you should see the contract details including its address, balance, and transaction history. Congratulations, you have successfully deployed a smart contract on the Mumbai Testnet! 
 
 ## Testing and Verification
 
-Once you have deployed your smart contract on the Polygon test network using GetBlock, it is important to test and verify its functionality to ensure that it works as intended. Here are some steps you can take for testing and verification:
+- Once you have deployed your smart contract on the Polygon test network using GetBlock, it is important to test and verify its functionality to ensure that it works as intended. Here are some steps you can take for testing and verification:
 
-There were 12 in the storage. To check, change the value to 14.
+- Open the smart contract in Remix and locate the storage variable you want to test. In this example, we will use a variable called "storage" that initially has a value of 12. 
 
- ![img](https://storage.getblock.io/web/blog/article-images/guide9.png)
+ ![img](https://storage.getblock.io/web/blog/article-images/img7+(1).png)
 
-In the “Store” field, enter the number 14 and save it on the network after confirming the operation in Metamask
+- Find the "Store" field and enter the number "14". This will change the value of the "storage" variable from 12 to 14.
 
- ![img](https://storage.getblock.io/web/blog/article-images/guide10.png)
+- Click on the "Transact" button to confirm the transaction in Metamask.
 
-Waiting for the transaction to be added to the network block.
+ ![img](https://storage.getblock.io/web/blog/article-images/imga10.png)
 
-Then we make sure that the saved value has changed from 12 to 14.
+- Wait for the transaction to be added to the network block. Once the transaction is confirmed, go to the "Read Contract" section under "Deployed Contracts".
 
- ![img](https://storage.getblock.io/web/blog/article-images/guide11.png)
+- Find the "storage" variable and click on the "Read" button. The new value of the variable should now be displayed as 14.
+
+ ![img](https://storage.getblock.io/web/blog/article-images/img9+(1).png)
 
 By following these steps, you can ensure that your smart contract works as intended and is secure and reliable for your users.
 
-This is how you deploy an easy Smart Contract on Polygon using Remix and GetBlock.
+Congratulations, you have successfully deployed a smart contract on the Mumbai Testnet! 
 
 If you have any additional questions or would like to share your experience, feel free to join our [community of Web3 developers](https://discord.gg/Jb9UZZUHN7) who are always ready to chat. 
