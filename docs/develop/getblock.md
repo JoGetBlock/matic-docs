@@ -18,7 +18,7 @@ The Polygon API endpoint by GetBlock is a useful tool for early-stage teams that
 
 You will learn how to use GetBlock to create and deploy a smart contract on the Mumbai Testnet using [GetBlock](https://getblock.io/) endpoints.  
 
-## W## What you will do
+## What you will do
 
 Following the tutorial, you will:
 
