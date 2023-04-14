@@ -24,11 +24,11 @@ In this tutorial, you will:
 
 1. Get started on GetBlock and access test nodes.
 2. Create a wallet address with Metamask.
-3.Add test tokens to your wallet.
+3. Add test tokens to your wallet.
 4. Compile and deploy a smart contract using Remix
 5. Check the status of your smart contract.
 
-### Preparatory Steps
+### Preparation 
 
 1. The first step is to [sign up with Getblock](https://account.getblock.io/sign-in) via wallet or email via 
 
@@ -46,38 +46,38 @@ If you don't have any tokens in your account, you can request some from the Mumb
 
 ## Smart Contract Development
 
-- Go to the [official Remix](https://remix.ethereum.org/) website. Remix is a Web-based IDE for Ethereum smart contract development in Solidity. 
+1. Visit the [official Remix website](https://remix.ethereum.org/). Remix is a Web-based IDE for Ethereum smart contract development in Solidity. 
 
-- Click on the "Create a new file" button located on the left side of the page.
+2. Click on the "Create a new file" button located on the left side of the page.
 
-- Select “Storage.sol” from Remix as an example of a contract.
+3. Select “Storage.sol” from Remix as an example of a contract.
 
   ![img](https://storage.getblock.io/web/blog/article-images/imga4.png)
 
-- Proceed by deploying the smart contract by clicking on the “Deploy & Run Transactions” tab.
+4. Deploy the smart contract by clicking on the “Deploy & Run Transactions” tab.
 
-- In Remix, click on the “Deploy & Run Transactions” tab located on the left-hand side of the screen. 
+5. Click on the “Deploy & Run Transactions” tab in Remix, located on the left-hand side of the screen. 
 
-- In the “Contract” dropdown menu, select the name of the smart contract you want to deploy and click on the “Deploy” button to deploy the smart contract.
+6. In the “Contract” dropdown menu, select the name of the smart contract you want to deploy and click on the “Deploy” button to deploy the smart contract.
 A Metamask window will pop up asking you to confirm the transaction. Click on the “Confirm” button to proceed.Wait for the transaction to be confirmed on the Polygon network. 
 
-- You can track the status of the transaction in the Metamask window or by checking the transaction hash on the Polygon explorer.
+> You can track the status of the transaction in the Metamask window or by checking the transaction hash on the Polygon explorer.
 
-- Once the transaction has been confirmed, you should see a green checkmark and a message indicating that the contract has been deployed successfully.
+Once the transaction has been confirmed, you should see a green checkmark and a message indicating that the contract has been deployed successfully.
 
   ![img](https://storage.getblock.io/web/blog/article-images/imga5.png)
 
-Locate the storage variable you want to test.
+7. Locate the storage variable you want to test.
 
-- Choose "Injected provider" as the provider and select "Metamask" as the wallet. 
+8. Choose "Injected provider" as the provider and select "Metamask" as the wallet. 
 
  ![img](https://storage.getblock.io/web/blog/article-images/imga6.png)
   
-- Check that your smart contract has been created on the network by looking at the Remix output panel.
+> Check that your smart contract has been created on the network by looking at the Remix output panel.
 
-- Click on the "Polygon (Matic) Mainnet" dropdown menu located at the top right corner of the page and select "Mumbai Testnet" from the list of available networks. Then enter the address of your smart contract in the search bar located at the top of the page.
+9. Click on the "Polygon (Matic) Mainnet" dropdown menu located at the top right corner of the page and select "Mumbai Testnet" from the list of available networks. Then enter the address of your smart contract in the search bar located at the top of the page.
 
-- Click on the search button or hit enter.
+10. Click on the search button or hit enter.
   
  ![img](https://storage.getblock.io/web/blog/article-images/img6+(1).png)
 
@@ -101,7 +101,7 @@ Once you have deployed your smart contract on the Polygon test network using Get
 
 4. Wait for the transaction to be added to a network block. Once the transaction is confirmed, navigate to the "Read Contract" section under "Deployed Contracts".
 
-4. Find the "storage" variable and click on the "Read" button. The new value of the variable should now be displayed as "14".
+5. Find the "storage" variable and click on the "Read" button. The new value of the variable should now be displayed as "14".
 
  ![img](https://storage.getblock.io/web/blog/article-images/img9+(1).png)
 
