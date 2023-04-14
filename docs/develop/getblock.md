@@ -87,21 +87,21 @@ If your smart contract has been successfully deployed, you should see the contra
 
 ## Testing and Verification
 
-- Once you have deployed your smart contract on the Polygon test network using GetBlock, it is important to test and verify its functionality to ensure that it works as intended. Here are some steps you can take for testing and verification:
+Once you have deployed your smart contract on the Polygon test network using GetBlock, it is important to test and verify its functionality to ensure that it works as intended. Here are some steps you can take for testing and verification:
 
-- Open the smart contract in Remix and locate the storage variable you want to test. In this example, we will use a variable called "storage" that initially has a value of 12. 
+1. Open the smart contract in Remix and locate the storage variable you want to test. In this example, we will use a variable called "storage" that initially has a value of 12."
 
  ![img](https://storage.getblock.io/web/blog/article-images/img7+(1).png)
 
-- Find the "Store" field and enter the number "14". This will change the value of the "storage" variable from 12 to 14.
+2. Change the value of the variable to 14 by entering "14" in the "Store" field and saving the value on the network after confirming the operation in Metamask.
 
-- Click on the "Transact" button to confirm the transaction in Metamask.
+3. Click on the "Transact" button to confirm the transaction in Metamask.
 
  ![img](https://storage.getblock.io/web/blog/article-images/imga10.png)
 
-- Wait for the transaction to be added to the network block. Once the transaction is confirmed, go to the "Read Contract" section under "Deployed Contracts".
+4. Wait for the transaction to be added to a network block. Once the transaction is confirmed, navigate to the "Read Contract" section under "Deployed Contracts".
 
-- Find the "storage" variable and click on the "Read" button. The new value of the variable should now be displayed as 14.
+4. Find the "storage" variable and click on the "Read" button. The new value of the variable should now be displayed as "14".
 
  ![img](https://storage.getblock.io/web/blog/article-images/img9+(1).png)
 
