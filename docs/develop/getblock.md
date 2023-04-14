@@ -20,11 +20,11 @@ You will learn how to use GetBlock to create and deploy a smart contract on the 
 
 ## What you will do
 
-Following the tutorial, you will:
+In this tutorial, you will:
 
-1. Get started on GetBlock and access GetBlock test nodes
-2. Create a wallet address with Metamask
-3. Add balance to the wallet (using test tokens)
+1. Get started on GetBlock and access test nodes.
+2. Create a wallet address with Metamask.
+3.Add test tokens to your wallet.
 4. Compile and deploy a smart contract using Remix
 5. Check the status of your smart contract.
 
@@ -42,7 +42,7 @@ Following the tutorial, you will:
 
   ![img](https://storage.getblock.io/web/blog/article-images/imga3.png)
 
-If you have zero balance in your account, you can request tokens from the [Mumbai faucet](/develop/tools/matic-faucet.md).
+If you don't have any tokens in your account, you can request some from the Mumbai faucet through the [faucet website](https://chat.openai.com/develop/tools/matic-faucet.md).
 
 ## Smart Contract Development
 
