@@ -1,111 +1,71 @@
 export const firstRow = [
-  {
-      title: "Learning",
-      status: "Beginner",
-      linkUrl: "docs/home/new-to-polygon/",
-      imageUrl: "img/supernet.svg",
-      description: "Learn about the basics of blockchain and Polygon and how to get started."
-  },
-  {
-      title: "Staking",
-      status: "Beginner",
-      linkUrl: "docs/maintain/delegate/delegate/",
-      imageUrl: "img/supernet.svg",
-      description: "Secure the network by staking tokens & delegating your stake to validators."
-  },
-  {
-      title: "Governance",
-      status: "Beginner: Docs Coming Soon",
-      linkUrl: "docs/maintain/govern/governance",
-      imageUrl: "img/supernet.svg",
-      description: "Vote on proposals and participate in the Polygon DAO."
-  },
-   {
-        title: "Developer",
-        status: "Intermediate",
-        linkUrl: "docs/develop/getting-started",
-        imageUrl: "img/home/dapp-developers.svg",
-        description: "Build an application and deploy on Polygon."
+    {
+        title: "Build a dApp on PoS",
+        linkUrl: "docs/category/deploy-a-contract",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Empower the world by building next-gen dApps using Polygon's PoS mainnet."
     },
     {
-        title: "Validator",
-        status: "Intermediate",
-        linkUrl: "docs/maintain/validate/validator-index/",
-        imageUrl: "img/home/core-contribution.svg",
-        description: "Secure the network by staking and operating a node to validate on Polygon."
+        title: "Build a dApp on zkEVM",
+        linkUrl: "https://zkevm.polygon.technology/docs/develop",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Empower the world by building next-gen dApps using ZK tech."
     },
     {
-        title: "Integrator",
-        status: "Intermediate",
-        linkUrl: "docs/integrate/quickstart",
-        imageUrl: "img/home/integration.svg",
-        description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
+        title: "Build a Supernet",
+        linkUrl: "/docs/category/build-a-supernet",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Learn how to build a fully-fleged appchain with Polygon Supernets."
+    },
+    {
+        title: "Run a PoS node",
+        linkUrl: "docs/category/operate-a-node",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running your own PoS node."
+    },
+    {
+        title: "Run a zkEVM node",
+        linkUrl: "https://zkevm.polygon.technology/docs/category/setup-zknode",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running your own ZK node."
+    },
+    {
+        title: "Run a Miden VM",
+        linkUrl: "docs/miden/user_docs/usage",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running a Miden VM."
     },
 ];
 
 export const secondRow = [
     {
         title: "PoS",
-        status: "PoS v3: Docs Coming Soon",
         linkUrl: "docs/pos/polygon-architecture",
-        imageUrl: "img/home/blockchain-basics.svg",
-        description: "A Layer 2 Proof of Stake scaling solution for Ethereum-based public blockchains"
-    },
-    {
-        title: "Edge",
-        status: "Blockchain SDK",
-        class_name: "polygon-banner",
-        linkUrl: "docs/edge/overview/",
-        imageUrl: "img/home/polygon-edge.svg",
-        description: "A modular and extensible framework for building Ethereum-compatible blockchain networks"
-    },
-    {
-        title: "Supernets",
-        status: "Appchains: Docs Coming Soon",
-        linkUrl: "",
-        imageUrl: "img/supernet.svg",
-        description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge"
-    },
-    {
-        title: "Avail",
-        status: "Data Availability",
-        linkUrl: "docs/avail/introduction/what-is-avail",
-        imageUrl: "img/avail.svg",
-        description: "A general-purpose, scalable, data availability-focused blockchain"
-    },
-    {
-        title: "Nightfall",
-        status: "Optimistic Rollup",
-        linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "img/Nightfall.png",
-        description: "An optimistic rollup solution designed for enterprises that supports private transactions"
+        imageUrl: "img/pos-logo.png",
+        description: "Proof-of-Stake scaling solution for Ethereum-based public blockchain networks."
     },
     {
         title: "zkEVM",
-        status: "ZK Rollup",
-        linkUrl: "docs/zkEVM/develop",
-        imageUrl: "img/hermez.svg",
-        description: "The first open-source ZK rollup with security of Ethereum and full EVM opcode equivalence"
+        linkUrl: "docs/zkEVM/introduction",
+        imageUrl: "img/zkevm-logo.png",
+        description: "First source-available ZK-Rollup with Ethereum's security & full EVM opcode equivalence."
+    },
+    {
+        title: "Supernets",
+        linkUrl: "docs/supernets/overview",
+        imageUrl: "img/supernets-logo.png",
+        description: "Application-specific blockchain networks that are secure, interoperable, and scalable."
     },
     {
         title: "Miden",
-        status: "STARK-based ZK Rollup: Docs Coming Soon",
         linkUrl: "docs/miden/intro/main",
-        imageUrl: "img/miden.svg",
-        description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts"
-    },
-    {
-        title: "Zero",
-        status: "ZK Rollup: Docs Coming Soon",
-        linkUrl: "",
-        imageUrl: "img/zero.svg",
-        description: "A highly scalable, Ethereum-compatible Zero Knowledge Rollup."
+        imageUrl: "img/miden-logo.png",
+        description: "STARK-based ZK-Rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "ID",
-        status: "Privacy: Docs Coming Soon",
-        linkUrl: "docs/polygonid/overview",
-        imageUrl: "img/polygon-id.svg",
-        description: "A blockchain-native identity and authentication solution"
+        linkUrl: "https://0xpolygonid.github.io/tutorials/",
+        imageUrl: "img/id-logo.png",
+        description: "Scalable blockchain-native identity and authentication solution with ZK-based privacy."
     },
 ];

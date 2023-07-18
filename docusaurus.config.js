@@ -2,36 +2,15 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: "Polygon Technology | Documentation",
-  tagline: "Welcome to Polygon developer documentation",
+  title: "Polygon Wiki",
+  tagline: "The official documentation for all Polygon products.",
   url: "https://wiki.polygon.technology",
   baseUrl: "/",
-  favicon: "img/polygon/polygon-logo.svg",
-  organizationName: "Polygon Technology",
+  favicon: "img/logo-round-purple.png",
+  organizationName: "Polygon Labs",
   projectName: "matic-docs",
   customFields: {
     description: "Build your next blockchain app on Polygon.",
-  },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ko'],
-    path: 'i18n',
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
-      ko: {
-        label: '한국어',
-        direction: 'ltr',
-        htmlLang: 'ko-KR',
-        calendar: 'gregory',
-        path: 'ko',
-      },
-    },
   },
   plugins: [
     [
@@ -42,193 +21,325 @@ module.exports = {
             to: '/',
             from: ['/en/latest', '/en/'],
           },
+          // heimdall
           {
-            to: '/docs/contribute/orientation',
-            from: '/docs/pos/orientation',
+            to: '/docs/pos/design/heimdall/antehandler',
+            from: '/docs/pos/heimdall/antehandler',
           },
           {
-            to: '/docs/contribute/community-maintainers',
-            from: '/docs/pos/community-maintainers',
+            to: '/docs/pos/design/heimdall/checkpoint',
+            from: '/docs/pos/heimdall/checkpoint',
           },
           {
-            to: '/docs/contribute/bug-bountry-program',
-            from: '/docs/pos/bug-bountry-programs',
+            to: '/docs/pos/design/heimdall/encoder',
+            from: '/docs/pos/heimdall/encoder',
           },
           {
-            to: '/docs/develop/meta-transactions/meta-transactions',
-            from: '/docs/develop/metatransactions/metatransactions-biconomy',
+            to: '/docs/pos/design/heimdall/overview',
+            from: '/docs/pos/heimdall/overview',
           },
           {
-            to: '/docs/develop/meta-transactions/meta-transactions',
-            from: '/docs/develop/metatransactions/metatransactions-gsn',
+            to: '/docs/pos/design/heimdall/peppermint',
+            from: '/docs/pos/heimdall/peppermint',
           },
           {
-            to: '/docs/develop/meta-transactions/network-agnostics',
-            from: '/docs/develop/metatransactions/network-agnostics',
+            to: '/docs/pos/design/heimdall/stdtx',
+            from: '/docs/pos/heimdall/stdtx',
           },
           {
-            to: '/docs/develop/wallets/getting-started',
-            from: '/docs/develop/cexs-wallets',
+            to: '/docs/pos/design/heimdall/transactions',
+            from: '/docs/pos/heimdall/transactions',
           },
           {
-            to: '/docs/develop/wallets/getting-started',
-            from: '/docs/develop/fiat-on-ramp',
+            to: '/docs/pos/design/heimdall/types',
+            from: '/docs/pos/heimdall/types',
           },
           {
-            to: '/docs/develop/wallets/getting-started',
-            from: '/docs/develop/fiat-ramps'
+            to: '/docs/pos/design/heimdall/validator-key-management',
+            from: '/docs/pos/heimdall/validator-key-management',
           },
           {
-            to: '/docs/develop/network-details/full-node-binaries',
-            from: '/docs/integrate/full-node-binaries',
+            to: '/docs/pos/design/heimdall/validators',
+            from: '/docs/pos/heimdall/validators',
+          },
+          // bor
+          {
+            to: '/docs/pos/design/bor',
+            from: '/docs/pos/bor',
           },
           {
-            to: '/docs/develop/network-details/full-node-deployment',
-            from: '/docs/integrate/full-node-deployment',
+            to: '/docs/pos/design/bor/consensus',
+            from: '/docs/pos/bor/consensus',
           },
           {
-            to: '/docs/develop/wallets/metamask',
-            from:'/docs/develop/metamask/overview',
+            to: '/docs/pos/design/bor/core_concepts',
+            from: '/docs/pos/bor/core_concepts',
           },
           {
-            to: '/docs/develop/wallets/getting-started',
-            from: '/docs/develop/cexs-wallets/cexs',
-          }
+            to: '/docs/pos/design/bor/overview',
+            from: '/docs/pos/bor/overview',
+          },
+          // state-sync
+          {
+            to: '/docs/pos/design/bridge/state-sync/how-state-sync-works',
+            from: '/docs/pos/state-sync/how-state-sync-works',
+          },
+          {
+            to: '/docs/pos/design/bridge/state-sync/state-sync',
+            from: '/docs/pos/state-sync/state-sync',
+          },
+          // l1-l2-communication
+          {
+            to: '/docs/pos/design/bridge/l1-l2-communication/ethereum-to-matic',
+            from: '/docs/pos/l1-l2-communication/ethereum-to-matic',
+          },
+          {
+            to: '/docs/pos/design/bridge/l1-l2-communication/fx-portal',
+            from: '/docs/pos/l1-l2-communication/fx-portal',
+          },
+          {
+            to: '/docs/pos/design/bridge/l1-l2-communication/matic-to-ethereum',
+            from: '/docs/pos/l1-l2-communication/matic-to-ethereum',
+          },
+          {
+            to: '/docs/pos/design/bridge/l1-l2-communication/state-transfer',
+            from: '/docs/pos/l1-l2-communication/state-transfer',
+          },
+          {
+            to: '/docs/pos/design/bridge/l1-l2-communication/fx-portal/fx-example',
+            from: '/docs/pos/l1-l2-communication/fx-portal/fx-example',
+          },
+          {
+            to: '/docs/pos/design/bridge/ethereum-polygon/tools/widget',
+            from: '/docs/pos/ethereum-polygon/tools/widget',
+          },
+          //pos node operate
+          {
+            to: '/docs/pos/operate/node/full-node-deployment',
+            from: '/docs/operate/full-node-binaries',
+          },
+          {
+            to: '/docs/pos/operate/node/full-node-deployment',
+            from: '/docs/operate/full-node-docker',
+          },
+          {
+            to: '/docs/pos/operate/node/full-node-deployment',
+            from: '/docs/operate/full-node-gcp',
+          },
+          {
+            to: '/docs/pos/operate/node/full-node-deployment',
+            from: '/docs/operate/full-node',
+          },
+          {
+            to: '/docs/pos/operate/node/full-node-deployment',
+            from: '/docs/operate/full-node-deployment',
+          },
+          {
+            to: '/docs/pos/operate/node/archive-node',
+            from: '/docs/operate/erigon-client',
+          },
+          {
+            to: '/docs/pos/operate/node/archive-node',
+            from: '/docs/operate/archive-node',
+          },
+          {
+            to: '/docs/pos/operate/node/archive-node',
+            from: '/docs/operate/setup-archive-node',
+          },
+          //pos operate
+          {
+            to: '/docs/pos/design/gas-token',
+            from: '/docs/operate/gas-token',
+          },
+          {
+            to: '/docs/pos/reference/contracts/genesis-contracts',
+            from: '/docs/operate/genesis-contracts',
+          },
+          {
+            to: '/docs/pos/reference/mapped-tokens',
+            from: '/docs/operate/mapped-tokens',
+          },
+          {
+            to: '/docs/pos/reference/rpc-endpoints',
+            from: '/docs/operate/network-rpc-endpoints',
+          },
+          {
+            to: '/docs/pos/reference/default-ports',
+            from: '/docs/operate/default-ports',
+          },
+          {
+            to: '/docs/pos/reference/snapshot-instructions-heimdall-bor',
+            from: '/docs/operate/snapshot-instructions-heimdall-bor',
+          },
+          {
+            to: '/docs/pos/operate/validator/validator-node-system-requirements',
+            from: '/docs/operate/technical-requirements',
+          },
         ],
-        createRedirects: function (existingPath) {
-          if (existingPath.startsWith('/docs/validate/')) {
-            return [existingPath.replace('/docs/maintain/')
-          ];
-          }
-        },
       },
     ],
   ],
   onBrokenLinks: 'log',
   themeConfig: {
+    metadata: [{ name: 'description', content: 'Welcome to Polygon Wiki, the official documentation for Polygon. Learn about Polygon and its suite of Ethereum-scaling solutions.' }],
+    announcementBar: {
+      id: 'banner',
+      content: `
+        <div class="announcement-bar">
+          The Polygon 2.0 Vision is out! Learn more
+            <a href="https://polygon.technology/roadmap" class="announcement-link" style="color: #ffffff;">here</a>
+        </div>
+      `,
+      textColor: '#ffffff',
+      isCloseable: true,
+    },
+
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+    category: {
+      emoji: ''
+    },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: "Scaling Solutions",
+          title: "Resources",
           items: [
-          {
-              label: "Polygon PoS",
-              href: "https://polygon.technology/solutions/polygon-pos/"
-          },
-          {
-            label: "Polygon Edge",
-            href: "https://polygon.technology/solutions/polygon-edge/"
-          },
-          {
-              label: "Polygon Supernets",
-              href: "https://polygon.technology/polygon-edge-supernets/"
-          },
-          {
-            label: "Polygon Hermez",
-            href: "https://polygon.technology/solutions/polygon-hermez/"
-          },
-          {
-            label: "Polygon Avail",
-            href: "https://polygon.technology/solutions/polygon-avail/"
-          },
-          {
-              label: "Polygon Nightfall",
-              href: "https://polygon.technology/solutions/polygon-nightfall/"
-          },
-          {
-            label: "Polygon Zero",
-            href: "https://polygon.technology/solutions/polygon-zero/"
-          },
-          {
-            label: "Polygon Miden",
-            href: "https://polygon.technology/solutions/polygon-miden/"
-          },
-       ]
-       },
-        {
-          title: "Developers",
-          items: [
-          {
-              label: "Get Started",
-              href: "https://wiki.polygon.technology/docs/develop/getting-started/"
-          },
-          {
+            {
+              href: 'https://support.polygon.technology/support/home',
+              label: 'Polygon Support',
+            },
+            {
               label: "Advocate Program",
               href: "https://polygon.technology/advocate-program/"
-          },
-          {
-            label: "Polygon Funds",
-            href: "https://polygon.technology/funds/"
-          },
-          {
-            label: "Polygon Studios",
-            href: "https://polygonstudios.com/"
-          },
-          {
+            },
+            {
+              label: "Polygon Funds",
+              href: "https://polygon.technology/funds/"
+            },
+            {
               label: "Bug Bounty",
               href: "https://immunefi.com/bounty/polygon/"
-          },
-          {
-            label: "dApps",
-            href: "https://polygon.technology/ecosystem/"
-          },
-          {
-            label: "Polygon Lightpaper",
-            href: "https://polygon.technology/lightpaper-polygon.pdf"
-          },
-          {
-            label: "Matic Whitepaper",
-            href: "https://github.com/maticnetwork/whitepaper/"
-          },
-      ]
+            },
+            {
+              href: 'https://www.dappstorekit.io/',
+              label: 'Build your own dApp',
+              target: '_blank',
+              rel: null,
+              position: 'right',
+            },
+          ]
+        },
+        {
+          title: "Reference",
+          items: [
+            {
+              label: "Whitepaper",
+              href: "https://github.com/maticnetwork/whitepaper/"
+            },
+            /* Commenting out until a working link is available
+            {
+              label: "Lightpaper",
+              href: "https://polygon.technology/lightpaper-polygon.pdf"
+            },
+            */
+            {
+              label: "zkEVM",
+              href: "https://zkevm.polygon.technology"
+            },
+            {
+              label: "Miden",
+              href: "docs/miden/design/main"
+            },
+          ]
+        },
+        {
+          title: "Native dApps",
+          items: [
+            {
+              href: 'https://wallet.polygon.technology',
+              label: 'PoS Wallet',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://staking.polygon.technology/',
+              label: 'PoS Staking',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://polygonscan.com/',
+              label: 'PoS Explorer',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://explorer.hermez.io/',
+              label: 'Hermez',
+              target: '_blank',
+              rel: null,
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              href: 'https://twitter.com/0xPolygon',
+              label: 'Twitter',
+            },
+            {
+              href: 'https://discord.com/invite/0xPolygon',
+              label: 'Discord',
+            },
+            {
+              href: 'https://forum.polygon.technology/',
+              label: 'Forum',
+            },
+            {
+              href: 'https://www.reddit.com/r/0xPolygon/',
+              label: 'Reddit',
+            },
+            {
+              href: 'https://t.me/polygonofficial',
+              label: 'Telegram',
+            },
+          ]
+        },
+        {
+          title: "Polygon Labs",
+          items: [
+            {
+              label: "About Us",
+              href: "https://polygon.technology/about/"
+            },
+            {
+              label: "Contact",
+              href: "https://polygon.technology/contact-us/"
+            },
+            {
+              label: "Blogs",
+              href: "https://blog.polygon.technology/"
+            },
+            {
+              label: "Brand Kit",
+              href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+            },
+          ]
+        },
+      ],
+      logo: {
+        alt: 'Polygon Logo',
+        src: 'img/polygon-labs.png',
+        href: 'https://polygon.technology/',
       },
-     {
-      title: "Company",
-      items: [
-      {
-        label: "About Us",
-        href: "https://polygon.technology/about/"
-      },
-      {
-        label: "Contact",
-        href: "https://polygon.technology/contact-us/"
-      },
-      {
-        label: "Transparency Sheet",
-        href: "https://polygon.technology/transparency-sheet/"
+      copyright: `Copyright © ${new Date().getFullYear()}`,
     },
-      {
-          label: "Blogs",
-          href: "https://blog.polygon.technology/"
-      },
-      {
-        label: "Brand Kit",
-        href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
-      },
-      {
-        label: "Media Kit",
-        href: "https://www.notion.so/polygontechnology/Polygon-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
-      },
-      {
-          label: "Careers",
-          href: "https://polygon.technology/careers/"
-      },
-      {
-        label: "Ecosystem Careers",
-        href: "https://ecosystemjobs.polygon.technology/jobs/"
-    },
-    ]
-    },
-    ],
-    logo: {
-      alt: 'Polygon Logo',
-      src: 'img/polygon/polygon-logo.svg',
-      href: 'https://polygon.technology/',
-    },
-    copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
-    },
-    image: 'img/polygon-wiki.png',
+    image: 'polygon-logo.png',
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
@@ -238,181 +349,148 @@ module.exports = {
     algolia: {
       indexName: "matic_developer",
       appId: '16JCDEHCCN',
-      apiKey: "757c19b23127e9c6959da7f13b71cfab",
+      apiKey: "d172fe1ed43468315f82bd9679515131",
       contextualSearch: true,
-      algoliaOptions: {},
+      algoliaOptions: {
+        attributesToSnippet: ['content:20'],
+      },
     },
     navbar: {
       hideOnScroll: true,
       logo: {
         alt: "Polygon logo",
-        src: "/img/polygon/polygon-logo.webp",
-        srcDark: "/img/polygon/polygon-logo.webp",
-        // width: 100,
-        // height: 500,
-        // href: 'https://wiki.polygon.technology/', // default to siteConfig.baseUrl
-        target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
+        src: "/img/polygon-logo.png",
+        srcDark: "/img/polygon-logo.png",
+        target: "_self",
       },
       items: [
         {
-          label: "dApps",
-          position: "right",
-          items: [
-                  {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fwallet',
-                    label: 'PoS Wallet',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fbridge',
-                    label: 'PoS Bridge',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://polygon.technology/staking',
-                    label: 'PoS Staking',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fwidget-dashboard',
-                    label: 'PoS Widget',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://polygonscan.com/',
-                    label: 'PoS Explorer',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://hermez.io/wallet',
-                    label: 'Hermez Wallet',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://explorer.hermez.io/',
-                    label: 'Hermez Explorer',
-                    target: '_blank',
-                    rel: null,
-                  },
-                ],
+          to: 'https://university.polygon.technology/',
+          label: 'New to Polygon?',
+          target: '_blank',
+          rel: null,
         },
         {
-          href: 'https://polygon.technology/developers/',
-          label: "Developer Resources",
-          position: "right",
-        },
-        {
-          label: "Community",
-          position: "right",
-          items: [
-                  {
-                    to: "docs/contribute/orientation/",
-                    label: "Contribute to Wiki",
-                    target: '_blank',
-                    rel: null,
-                    activeBasePath: "docs/contribute",
-                  },
-                  {
-                    href: 'https://discord.com/invite/0xPolygon',
-                    label: 'Discord',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://forum.polygon.technology/',
-                    label: 'Forum',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://www.reddit.com/r/0xPolygon/',
-                    label: 'Reddit',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://twitter.com/0xPolygon',
-                    label: 'Twitter',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://t.me/polygonofficial',
-                    label: 'Telegram',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    label: "Get Updates",
-                    href: 'https://polygon.technology/notifications/',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://polygon.technology/community/',
-                    label: 'View all communities',
-                    target: '_blank',
-                    rel: null,
-                  },
-                ],
-        },
-        {
-          label: "Support",
-          position: "right",
+          label: "Polygon Stack",
+          position: "left",
           items: [
             {
-              href: 'https://support.polygon.technology/support/home',
-              label: 'End-user support',
+              href: '/docs/pos/getting-started',
+              label: 'PoS Mainnet',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://zkevm.polygon.technology',
+              label: 'zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/supernets',
+              label: 'Supernets',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden',
+              label: 'Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://0xpolygonid.github.io/tutorials/',
+              label: 'ID',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: 'https://events.polygon.technology/blueprint-web3-games-guide',
+              label: 'Gaming',
               target: '_blank',
               rel: null,
-            }
-          ]
+            },
+          ],
         },
         {
-          label: "FAQs",
-          position: "right",
+          label: "Apps & Tools",
+          position: "left",
           items: [
-                  {
-                    to: 'docs/faq/general-faq/',
-                    label: 'PoS FAQ',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    to: 'docs/avail/faq',
-                    label: 'Avail FAQ',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    to: 'docs/nightfall/faq/',
-                    label: 'Nightfall FAQ',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    to: 'docs/edge/faq/validators/',
-                    label: 'Edge FAQ',
-                    target: '_blank',
-                    rel: null,
-                  }
-                ],
+            {
+              href: '/docs/tools',
+              label: 'General',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/tools/matic-js/get-started',
+              label: 'Matic.js',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Participate",
+          position: "left",
+          items: [
+            {
+              href: '/docs/delegate/delegate',
+              label: 'Delegate MATIC',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/run-a-validator-node',
+              label: 'Run a PoS Validator',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/governance',
+              label: 'Governance',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Pre-Specs",
+          position: "left",
+          items: [
+            {
+              href: 'https://zkevm.polygon.technology/docs/introduction',
+              label: 'zkEVM',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              to: '/docs/category/miden-vm',
+              label: 'Miden',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          to: 'https://support.polygon.technology/support/solutions',
+          label: 'Support',
+          position: "right",
+          target: '_blank',
+          rel: null,
+        },
+        {
+          to: '/docs/contribute/orientation/',
+          label: 'Contribute',
+          position: "right",
+          target: '_self',
+          rel: null,
         },
         {
           href: "https://github.com/maticnetwork",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
         },
       ],
     },
@@ -434,28 +512,19 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/maticnetwork/matic-docs/tree/master/",
           path: "docs",
-          showLastUpdateAuthor: false,
+          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           remarkPlugins: [math],
-          rehypePlugins: [[katex, {strict: false, throwOnError: true,globalGroup: true}]],
+          rehypePlugins: [[katex, { strict: false, throwOnError: true, globalGroup: true }]],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        gtag: {
+          trackingID: 'G-LLNECLTBDN',
+          anonymizeIP: true,
+        },
       },
-      // "@docuaurus/plugin-content-pages",
-      // {
-      //   path: "src/pages",
-      //   routeBasePath: "",
-      //   include: ["**/*.{js,jsx}"],
-      // },
-      // "@docusaurus/plugin-google-analytics",
-      // "@docusaurus/plugin-sitemap",
-      // {
-      //   cacheTime: 600 * 1000, // 600 sec - cache purge period
-      //   changefreq: "weekly",
-      //   priority: 0.5,
-      // },
     ],
   ],
 };

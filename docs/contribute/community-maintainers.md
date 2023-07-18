@@ -1,7 +1,7 @@
 ---
 id: wiki-maintainers
 title: Wiki Maintainers
-sidebar_label: Maintainers
+sidebar_label: Wiki Maintainers
 description: A list of Polygon Wiki maintainers
 keywords:
   - docs
@@ -11,7 +11,7 @@ keywords:
   - docs
   - maintainers
   - contributors
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-logo.png
 slug: community-maintainers
 ---
 
